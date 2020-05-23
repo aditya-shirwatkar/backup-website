@@ -209,13 +209,13 @@ hr {
 	margin: 0 20px;
 }
 #about .social i.fa {
-	font-size: 30px;
+	font-size: 45px;
 	padding: 4px 5px;
-	color: #fff;
+	color: #121d1f;
 	transition: all 0.5s;
 }
 #about .social i.fa:hover {
-	color: #121d1f;
+	color: #629ca7;
 }
 /* Skills Section */
 #skills {
