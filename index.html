@@ -82,42 +82,56 @@
                     <h2 class="mb-5">Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Gait and Trajectory Optimization for Bipeds</h3>
-                            <div class="subheading mb-3">at IvLabs, VNIT Nagpur</div>
-                            <div>
-                                <ul>
-                                    <li>Implemented the direct collocation method of trajectory optimization on
-                                        the planar five-link underactuated system
-                                    <li>Generated the trajectories by a non-linear program in python using the
-                                        CasADi toolbox and MATLAB
-                                    <li>Implemented optimal dynamic walking for Human and Ostrich gaits forthe
-                                        system on a sinusoidal, sloped, staired and flat terrains
-                                    <li>Generated optimal trajectory in a cart-pole system, to balance the pole
-                                        upright
+                            <div class="mb-5">
+                                <h3 class="mb-3">Gait and Trajectory Optimization for Bipeds</h3>
+                                    <div class="subheading mb-3">at IvLabs, VNIT Nagpur</div>
+                                    <div>
+                                    <ul>
+                                        <li>Implemented the direct collocation method of trajectory optimization on
+                                            the planar five-link underactuated system
+                                        <li>Generated the trajectories by a non-linear program in python using the
+                                            CasADi toolbox and MATLAB
+                                        <li>Implemented optimal dynamic walking for Human and Ostrich gaits forthe
+                                            system on a sinusoidal, sloped, staired and flat terrains
+                                        
+                                        <table style="width:100%">
+                                            <tr>
+                                            <th>Terrain</th>
+                                            <th>Human Gait</th>
+                                            <th>Ostrich Gait</th>
+                                            </tr>
+                                            <tr>
+                                            <td>Sinusoidal</td>
+                                            <td><img src="assets/img/projects/biped/sin_walk_10.gif" alt="Biped Trajectory Optimization"  width="230" height="171"></td>
+                                            <td><img src="assets/img/projects/biped/osin_walk_10.gif" alt="Biped Trajectory Optimization" width="230" height="171"></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Staired</td>
+                                            <td><img src="assets/img/projects/biped/stairs_walk_10.gif" alt="Biped Trajectory Optimization"  width="230" height="171"></td>
+                                            <td><img src="assets/img/projects/biped/ostairs_walk_10.gif" alt="Biped Trajectory Optimization" width="230" height="171"></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Slope</td>
+                                            <td><img src="assets/img/projects/biped/slope_walk_10.gif" alt="Biped Trajectory Optimization"  width="230" height="171"></td>
+                                            <td><img src="assets/img/projects/biped/oslope_walk_10.gif" alt="Biped Trajectory Optimization" width="230" height="171"></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Flat</td>
+                                            <td><img src="assets/img/projects/biped/flat_walk_10.gif" alt="Biped Trajectory Optimization"  width="230" height="171"></td>
+                                            <td><img src="assets/img/projects/biped/oflat_walk_10.gif" alt="Biped Trajectory Optimization" width="230" height="171"></td>
+                                            </tr>
+                                                
+                                        </table>
 
-                                    <!-- <li>Implemented Dynamic walking for Human Gait on a sinusoidal terrain</li> 
-                                    <img src="assets/img/projects/path_sin_40_human.gif" alt="Biped Trajectory Optimization" width="300" height="200">
+                                        <li>Generated optimal trajectory in a cart-pole system, to balance the pole
+                                            upright
+                                            <img src="assets/img/projects/biped/cartpole.gif" alt="Biped Trajectory Optimization" width="200" height="200">
+                                    </ul>
 
-                                    <li>Implemented Dynamic walking for Human Gait on a sloped terrain</li> 
-                                    <img src="assets/img/projects/path_slope_1by2_N_40_human.gif" alt="Biped Trajectory Optimization" width="300" height="200">
-
-                                    <li>Implemented Dynamic walking for Human Gait on a Flat terrain</li> 
-                                    <img src="assets/img/projects/path_human.gif" alt="Biped Trajectory Optimization" width="300" height="200">
-
-                                    <li>Implemented Dynamic walking for Ostrich Gait on a Flat terrain</li>
-                                    <img src="assets/img/projects/path1.gif" alt="Biped Trajectory Optimization" width="300" height="200">
-
-                                    <li> Generated a Single Human Periodic Gait in Python as well as in MATLAB.</li>
-                                    <img src="assets/img/projects/animation2.gif" alt="Biped Trajectory Optimization" width="300" height="200">
-                            
-                                    <li> As a side task also generated a trajectory for CartPole swing up problem</li>
-                                    <br>
-                                    &nbsp; &nbsp; -->
-                                </ul>
-                                <img src="assets/img/projects/biped/" alt="Biped Trajectory Optimization" width="200" height="150">
-                            </div>
-                            <div>
-                                <h3 class="mb-3">Underactuated Robotics</h3>
+                                </div>
+                            </div>    
+                            <div class="mb-5">
+                                <h3 class="mb-3">Optimal Control Algorithms</h3>
                                 <p>
                                     In this repository I implemented optimal control algorithms on
                                     some insteresting systems as well as tried to solve some interesting problems 
@@ -126,36 +140,35 @@
                                 </p>
                                 <ul class="mb-5">
                                     <li>Trajectory Optimization on a 2D-Quadrotor in a custom OpenAI gym environment</li>
-                                    <img src="assets/img/projects/trajopt_quad2d.gif" alt="2D-Quadrotor" width="300" height="200">                                
-                                    <img src="assets/img/projects/trajopt_quad2d.png" alt="2D-Quadrotor" width="300" height="200">                                
+                                    <img src="assets/img/projects/underactuated/trajopt_quad2d.gif" alt="2D-Quadrotor" width="300" height="200">                                
+                                    <img src="assets/img/projects/underactuated/trajopt_quad2d.png" alt="2D-Quadrotor" width="300" height="200">                                
 
                                     <br>
 
                                     <li>LQR on a 2D-Quadrotor in a custom OpenAI gym environment</li>
-                                    <img src="assets/img/projects/quadrotor_lqr.gif" alt="2D-Quadrotor" width="300" height="200">                                
+                                    <img src="assets/img/projects/underactuated/quadrotor_lqr.gif" alt="2D-Quadrotor" width="300" height="200">                                
                                     
                                     <br>
 
                                     <li>LQR on a CartPole in a custom OpenAI gym environment</li>
-
-                                    <img src="assets/img/projects/cart_lqr.gif" alt="Double Integrator" width="300" height="200">
+                                    <img src="assets/img/projects/underactuated/cart_lqr.gif" alt="Double Integrator" width="300" height="200">
                                     
                                     <br>
 
                                     <li>LQR on Double Integrator in a custom OpenAI gym environment</li>
-                                    <img src="assets/img/projects/d_i_lqr.gif" alt="Double Integrator" width="300" height="200">
+                                    <img src="assets/img/projects/underactuated/d_i_lqr.gif" alt="Double Integrator" width="300" height="200">
                                     
                                     <br>
                                     
                                     <li>Value Iteration on LQR</li>
-                                    <img src="assets/img/projects/min_time_value_iter.gif" alt="Double Integrator" width="300" height="200">
-                                    <img src="assets/img/projects/quad_value_iter.gif" alt="Double Integrator" width="300" height="200">
+                                    <img src="assets/img/projects/underactuated/min_time_value_iter.gif" alt="Double Integrator" width="300" height="200">
+                                    <img src="assets/img/projects/underactuated/quad_value_iter.gif" alt="Double Integrator" width="300" height="200">
 
                                     <br>
 
                                     <li>Linear Feedback Cancellation on a Pendulum whose base is vibrating at constant 
                                         angular frequency horizontally, to make the pole rotate at constant angular velocity </li>
-                                    <img src="assets/img/projects/vibPen_const_ang_vel.gif" alt="Vibrating Pendulum" width="300" height="200">
+                                    <img src="assets/img/projects/underactuated/vibPen_const_ang_vel.gif" alt="Vibrating Pendulum" width="300" height="200">
 
                                 
                                 </ul>
@@ -169,13 +182,13 @@
                             
                                 </div>         -->
                             </div>
-                            <div>
-                                <h3 class="mb-3">Advanced Robotics</h3>
+                            <div class="mb-5">
+                                <h3 class="mb-3">CS 287: Fall 2019, Assignments</h3>
                                 <p>
 
                                 </p>
                             </div>
-                            <div>
+                            <div class="mb-5">
                                 <h3 class="mb-3">Reinforcement Learning</h3>
                                 <p> 
                                     <b><a href="https://github.com/aditya-shirwatkar/RL">[Github]</a></b> 
@@ -184,17 +197,17 @@
                                 <ul class="mb-5">
                                     
                                     <li>DQN on CartPole</li>
-                                    <img src="assets/img/projects/cartpole_RL.gif" alt="CartPole" width="300" height="200">                                
-                                    <img src="assets/img/projects/4_572_256_2.png" alt="Reward" width="300" height="200">                                
+                                    <img src="assets/img/projects/RL/cartpole_RL.gif" alt="CartPole" width="300" height="200">                                
+                                    <img src="assets/img/projects/RL/4_572_256_2.png" alt="Reward" width="300" height="200">                                
 
                                     <br>
 
                                     <li>Q-Learning</li>
-                                    <img src="assets/img/projects/mountaincar.gif" alt="MountainCar" width="300" height="200">                                
+                                    <img src="assets/img/projects/RL/mountaincar.gif" alt="MountainCar" width="300" height="200">                                
                                 
                                 </ul>
                             </div>
-                            <div>
+                            <div class="mb-5">
                                 <h3 class="mb-3">Go to Goal Behavior using PID</h3>
                             </div>
     
