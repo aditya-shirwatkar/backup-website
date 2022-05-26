@@ -1,391 +1,240 @@
+<!---
+
+db   db db    db d8888b. d8888b. db      d88888b         .d88b.  .d888b. 
+88   88 88    88 88  `8D 88  `8D 88      88'            .8P  88. VP  `8D 
+88ooo88 88    88 88oooY' 88oooY' 88      88ooooo        88  d'88    odD' 
+88~~~88 88    88 88~~~b. 88~~~b. 88      88~~~~~ C8888D 88 d' 88  .88'   
+88   88 88b  d88 88   8D 88   8D 88booo. 88.            `88  d8' j88.    
+YP   YP ~Y8888P' Y8888P' Y8888P' Y88888P Y88888P         `Y88P'  888888D 
+                                                                         
+-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Aditya Shirwatkar - Roboticist</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./script/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <title>Portfolio | hubble-02 </title>
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Aditya Shirwatkar</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/me_current.jpeg" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
-                </ul>
-            </div>
-        </nav>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">A2</a>
+                </div>
 
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-3">
-                        Aditya
-                        <span class="text-primary">Shirwatkar</span>
-                    </h1>
-                    <div class="flex-grow-1 mb-4">
-                        <h3>  
-                            <b>Reconfigurable Robotics &nbsp · &nbsp Legged Robotics &nbsp </b>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <img class="home__img" src="./img/profile.jpg" alt="" style="max-width:100%;height:auto;">
+
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Aditya</span><br> 
+                        <h3>
+                            <tags class="tags" disabled>Legged Robotics</tags>
+                            <tags class="tags" disabled>Optimal Control</tags>
+                            <tags class="tags" disabled>Reinforcement Learning</tags>
                         </h3>
-                    </div>
-                    <p class="lead mb-2">I am a senior undergraduate student in the Department of Mechanical Engineering
-                        at <a href="http://vnit.ac.in/"><b>Visvesvaraya National Institute of Technology (VNIT), Nagpur</b></a>
-                        who is an aspiring robotics researcher and wishes to make the world a better place through the advancements in Robotics and AI &#128519
-                    </p>
-                    <ul class="lead mb-3">
-                        <li> &#128640 My current research interests lie in developing robust control algorithms for dynamic and agile locomotions of robots in challenging environments.
-                        <li> &#128301 I’m currently working on developing a full stack reconfigurable robotic system along with controllers for robust navigation of quadrupeds.
-                        <li> &#128172 I am happy to share my experiences in robotics and would like to hear about yours too
-                        <li> &#9889 Check out some of the projects of our growing community that I'm part of at - <a href="https://www.ivlabs.in/"><b>IvLabs</b></a>
-						<li> &#127744 I'm also involved with a team of legged robot enthusiasts at - <a href="https://stochlab.github.io/"><b>Stoch Lab</b></a>
-					</ul>
+                    </h1>
 
-                    <div class="social-icons mb-4">
-                        <a class="social-icon" href="https://in.linkedin.com/in/aditya-shirwatkar-40a956188"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/aditya-shirwatkar"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://twitter.com/A_Shirwatkar"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="mailto:aditya.s@students.vnit.ac.in"><i class="fas fa-envelope"></i></a>
-                    </div>
-                    <!-- <div class="lead mb-5"><button type="button" class="btn btn-primary btn-lg" ><a href="https://drive.google.com/file/d/1_VQV3C48j7JDf6E9HjgKRclTwA8GmN2n/view?usp=sharing">Resume</a></button></div> -->
-                    <div class="lead mb-3">
-                        <a class="btn btn-primary btn-lg" href="https://drive.google.com/file/d/1Au0u1A6T5t1hxRWBBZunYxvENzBKhTDB/view?usp=sharing" target="_blank">
-                        Resume</a>
-                    </div>
+                    <a href="#" class="button">CV</a>
                 </div>
-            </section>
-            <hr class="m-0" />
 
-            <!--Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="mb-5">
-                                <h3 class="mb-3">Gait and Trajectory Optimization for Bipeds</h3>
-                                    <div class="subheading mb-3">at IvLabs, VNIT Nagpur</div>
-                                    <div>
-                                    <ul>
-                                        <li>Implemented the direct collocation method of trajectory optimization on
-                                            the planar five-link underactuated system
-                                        <li>Generated the trajectories by a non-linear program in python using the
-                                            CasADi toolbox and MATLAB
-                                        <li>Implemented optimal dynamic walking for Human and Ostrich gaits forthe
-                                            system on a sinusoidal, sloped, staired and flat terrains
-                                        
-                                        <table style="width:100%">
-                                            <tr>
-                                            <th>Terrain</th>
-                                            <th>Human Gait</th>
-                                            <th>Ostrich Gait</th>
-                                            </tr>
-                                            <tr>
-                                            <td>Sinusoidal</td>
-                                            <td><img src="assets/img/projects/biped/sin_walk_10.gif" alt="Biped Trajectory Optimization"  width="230" height="171"></td>
-                                            <td><img src="assets/img/projects/biped/osin_walk_10.gif" alt="Biped Trajectory Optimization" width="230" height="171"></td>
-                                            </tr>
-                                            <tr>
-                                            <td>Staired</td>
-                                            <td><img src="assets/img/projects/biped/stairs_walk_10.gif" alt="Biped Trajectory Optimization"  width="230" height="171"></td>
-                                            <td><img src="assets/img/projects/biped/ostairs_walk_10.gif" alt="Biped Trajectory Optimization" width="230" height="171"></td>
-                                            </tr>
-                                            <tr>
-                                            <td>Slope</td>
-                                            <td><img src="assets/img/projects/biped/slope_walk_10.gif" alt="Biped Trajectory Optimization"  width="230" height="171"></td>
-                                            <td><img src="assets/img/projects/biped/oslope_walk_10.gif" alt="Biped Trajectory Optimization" width="230" height="171"></td>
-                                            </tr>
-                                            <tr>
-                                            <td>Flat</td>
-                                            <td><img src="assets/img/projects/biped/flat_walk_10.gif" alt="Biped Trajectory Optimization"  width="230" height="171"></td>
-                                            <td><img src="assets/img/projects/biped/oflat_walk_10.gif" alt="Biped Trajectory Optimization" width="230" height="171"></td>
-                                            </tr>
-                                                
-                                        </table> <br>
-                                        <li>Generated optimal trajectory in a cart-pole system, to balance the pole
-                                            upright
-                                            <img src="assets/img/projects/biped/cartpole.gif" alt="Biped Trajectory Optimization" width="200" height="200">
-                                    </ul>
-
-                                </div>
-                            </div>    
-                            <div class="mb-5">
-                                <h3 class="mb-3">Optimal Control Algorithms</h3>
-                                <p>
-                                    In this repository I implemented optimal control algorithms on
-                                    some insteresting systems as well as tried to solve some interesting problems 
-                                    <br>
-                                    <b><a href="https://github.com/aditya-shirwatkar/UnderactuatedRobotics">[Github]</a></b> 
-                                </p>
-                                <ul class="mb-5">
-                                    <li>Trajectory Optimization on a 2D-Quadrotor in a custom OpenAI gym environment</li>
-                                    <img src="assets/img/projects/underactuated/trajopt_quad2d.gif" alt="2D-Quadrotor" width="300" height="200">                                
-                                    <img src="assets/img/projects/underactuated/trajopt_quad2d.png" alt="2D-Quadrotor" width="300" height="200">                                
-
-                                    <br>
-
-                                    <li>LQR on a 2D-Quadrotor in a custom OpenAI gym environment</li>
-                                    <img src="assets/img/projects/underactuated/quadrotor_lqr.gif" alt="2D-Quadrotor" width="300" height="200">                                
-                                    
-                                    <br>
-
-                                    <li>LQR on a CartPole in a custom OpenAI gym environment</li>
-                                    <img src="assets/img/projects/underactuated/cart_lqr.gif" alt="Double Integrator" width="300" height="200">
-                                    
-                                    <br>
-
-                                    <li>LQR on Double Integrator in a custom OpenAI gym environment</li>
-                                    <img src="assets/img/projects/underactuated/d_i_lqr.gif" alt="Double Integrator" width="300" height="200">
-                                    
-                                    <br>
-                                    
-                                    <li>Value Iteration on LQR</li>
-                                    <img src="assets/img/projects/underactuated/min_time_value_iter.gif" alt="Double Integrator" width="300" height="200">
-                                    <img src="assets/img/projects/underactuated/quad_value_iter.gif" alt="Double Integrator" width="300" height="200">
-
-                                    <br>
-
-                                    <li>Linear Feedback Cancellation on a Pendulum whose base is vibrating at constant 
-                                        angular frequency horizontally, to make the pole rotate at constant angular velocity </li>
-                                    <img src="assets/img/projects/underactuated/vibPen_const_ang_vel.gif" alt="Vibrating Pendulum" width="300" height="200">
-
-                                
-                                </ul>
-                                <!-- <div class="flex-column flex-md-row mb-5">
-                                    
-
-                                    <br>
-                                    <br>
-                                    <br>
-        
-                            
-                                </div>         -->
-                            </div>
-                            <div class="mb-5">
-                                <h3 class="mb-3">CS 287: Fall 2019, Assignments</h3>
-                                <p>
-
-                                </p>
-                            </div>
-                            <div class="mb-5">
-                                <h3 class="mb-3">Reinforcement Learning</h3>
-                                <p> 
-                                    <b><a href="https://github.com/aditya-shirwatkar/RL">[Github]</a></b> 
-                                </p>
-
-                                <ul class="mb-5">
-                                    
-                                    <li>DQN on CartPole</li>
-                                    <img src="assets/img/projects/RL/cartpole_RL.gif" alt="CartPole" width="300" height="200">                                
-                                    <img src="assets/img/projects/RL/4_572_256_2.png" alt="Reward" width="300" height="200">                                
-
-                                    <br>
-
-                                    <li>Q-Learning</li>
-                                    <img src="assets/img/projects/RL/mountaincar.gif" alt="MountainCar" width="300" height="200">                                
-                                
-                                </ul>
-                            </div>
-                            <div class="mb-5">
-                                <h3 class="mb-3">Go to Goal Behavior using PID</h3>
-                            </div>
-    
-                        </div>
-                    </div>
+                <div class="home__social">
+                    <a class="home__social-icon" href="https://in.linkedin.com/in/aditya-shirwatkar-40a956188"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="home__social-icon" href="https://github.com/aditya-shirwatkar"><i class="fab fa-github"></i></a>
+                    <a class="home__social-icon" href="https://twitter.com/A_Shirwatkar"><i class="fab fa-twitter"></i></a>
+                    <a class="home__social-icon" href="mailto:aditya.s@students.vnit.ac.in"><i class="fas fa-envelope"></i></a>
                 </div>
-            </section>
-            <hr class="m-0" />
 
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Project Intern</h3>
-                            <div class="subheading mb-3">IvLabs, VNIT Nagpur</div>
-                                <p>SummerIntern under Dr. Shital S. Chiddarwar
-                                </p>
-                                <ul>
-                                    <li>Developed an autonomous surveillance mobile robot that functions as a
-                                        patrolling unit forintrusion detection.
-                                    <li>Integrated the hardware stack of Raspberry Pi Zero W, Camera Module,
-                                        Ultrasonic sensor, and PIR sensor, with a software stack of an Android
-                                        Application and Google’s Firebase.
-                                    <li>Capable of detecting human intrusion up to 6m and transmitting
-                                        real-time video feed to the remote Android Application through the
-                                        Firebase and teleoperate the same.    
-                                </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2019 - July 2019</span></div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="./img/ayanokoji.gif" alt="">
                     </div>
-                </div>
-            </section>
-            <hr class="m-0" />            
-
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
                     
-                    <h3 class="mb-1">Programming Languages</h3>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><img src="assets/img/icons/python.png" width="193" height="51"></li>
-                        <li class="list-inline-item"><img src="assets/img/icons/c++.png" width="44" height="50"></li>
-                    </ul>
-                    <div class="subheading mb-1">Familiar with</div>
-                    <ul class="list-inline dev-icons mb-5">
-                        <li class="list-inline-item"><img src="assets/img/icons/html_css.png" width="86" height="60"></li>
-                    </ul>
-
-                    <h3 class="mb-2">Softwares</h3>
-                    <ul class="list-inline dev-icons mb-5">
-                        <li class="list-inline-item"><img src="assets/img/icons/matlab.png" width="167" height="57"></li>
-                        &nbsp &nbsp<li class="list-inline-item"><img src="assets/img/icons/photoshop.png" width="200" height="57"></li>
-                        &nbsp &nbsp<li class="list-inline-item"><img src="assets/img/icons/solidworks.png" width="200" height="80"></li>
-                    </ul>
-
-                    <h3 class="mb-2">Research Tools and Libraries</h3>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><img src="assets/img/icons/casadi.png" width="165" height="41"></li>
-                        &nbsp &nbsp<li class="list-inline-item"><img src="assets/img/icons/ros.png" width="150" height="35"></li>
-                        &nbsp &nbsp<li class="list-inline-item"><img src="assets/img/icons/Pytorch.png" width="165" height="41"></li>
-                    </ul>
-                    <!-- <h3 class="subheading mb-3">Workflow</h3>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul> -->
+                    <div>
+                        <h2 class="about__subtitle">I'am Kiyo</h2>
+                        <p class="about__text">I come from <a href="#" class="mylink">Indonesia</a>. A young man who has a dream to become DevOps. It might seem silly, because I'm not very computer savvy either. But I'm sure that I can reach my goals</p>           
+                    </div>                                   
                 </div>
             </section>
-            <hr class="m-0" />
 
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Visvesvaraya  National Institute of Technology (VNIT)</h3>
-                            <div class="subheading mb-3">Bachelor of Technology</div>
-                            <div>Mechanical Engineering</div>
-                            <p>Current GPA: 7.98</p>
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">It's about my skills. Not much I can only a few. But right now I'm still honing it, so I can get what I want</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='fab fa-docker skills__icon'></i>
+                                <span class="skills__name">DOCKER</span>
+                            </div>
+                            <div class="skills__bar skills__docker">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2018 - May 2022</span></div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='fab fa-linux skills__icon'></i>
+                                <span class="skills__name">LINUX</span>
+                            </div>
+                            <div class="skills__bar skills__linux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='fab fa-python skills__icon' ></i>
+                                <span class="skills__name">PYTHON</span>
+                            </div>
+                            <div class="skills__bar skills__py">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='fab fa-hackerrank skills__icon'></i>
+                                <span class="skills__name">CyberSec</span>
+                            </div>
+                            <div class="skills__bar skills__harden">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
-                    </div> -->
+                    
+                    <div>              
+                        <img src="./img/kiyo.jpg" alt="" class="skills__img">
+                    </div>
                 </div>
             </section>
-            <hr class="m-0" />
 
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p> I like to spend my free time appreciating the art of <a href='https://myanimelist.net/profile/hubble-02'><b>Anime</b></a> and 
-						<a href='https://myvideogamelist.com/profile/hubble-02'><b>Video Games</b></a> (Yeah, art is subjective) <br>
-						Apart from this, I enjoy most of my time doing sketching, painting &#128522
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <button class="contact__button button" type="submit">Submit</button>
+                    </form>
                 </div>
             </section>
-            <hr class="m-0" />
+        </main>
 
-            <!-- Awards-->
-            <!-- <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
-                </div>
-            </section> -->
-        
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Sosial Media</p>
+            <div class="footer__social">
+                <a href="https://github.com/Kyxzy" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://instagram.com/clyusz_" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./script/js/main.js    "></script>
+    
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Decode this : RkxBR3tsa3NqYWt0aW0yMDIyfQ==>
